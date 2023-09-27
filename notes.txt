@@ -1,0 +1,53 @@
+1.Python has long and complex data types to store very large numbers but its rarely used.(total 4 number data types including int and float).
+(which are generally used)
+
+2. 1/2 = 0.5 --> division of two ints always gives a float in python by defualt.
+
+3.None --> python's version of null (special character or value, represents nothing)
+when to use? to declare unassigned variables ex: child = None  (to avoid variable not defined error).
+instead of child = "" or child  = 0
+type (child)  -->  <class 'NoneType'>
+
+4.Python is DYNAMICALLY TYPED i,e vaiaibles can be assigned different types of values along the way.
+a=1
+a="number one"
+a=True
+All are valid.
+
+5. use can use both " " or '' for strings just be consistent.
+
+6. Don't create variables of reserved words.You win't get error instead you overwrite the func()
+
+7.a=[1,2,3]
+  b=[1,2,3]
+  a == b #True  --> checks value
+  a is b # False  --. checks memory location of object(not same object)--> whether pointing or referencing the same thing in memory.
+
+8. a function floating on its own like print(),len() --> are just functions.
+   a function attached/associated to a particular object is called a method. ex: list.append()
+
+9. return keyword shortcircuits the function.
+
+10. parameter - variable in a method definition
+    argument - data passed into the function.
+
+11. "nonlocal" (keyword) - let's us moddify a parents variables in a child function(aka nested)
+
+12.documenting functions - use """comment""" - always frist line of a function
+    - it would be nice to document what each function does in a huge project.
+
+13. *args - a special operator we can pass to functions.(176)
+  - gathers remaining arguments as tuple.
+
+14. **kwargs - stands for keyword args - passed as a special operator to a function(call it whatever yo want)
+    - gathers remaining keyword args as dictionary.
+
+15. # Parameter ordering is the order in which paarameters are passed into a function while declaring it so the code doesn't break 
+  -here is the order - 1.paarameters -> 2.*args -> 3.defualt params -> 4.**kwargs.
+
+16.(1) & (1+1) - not a tuple.
+   (1,) - a tuple.
+   
+17. lambdas - similar to anonymous funcs in JS - syntax: "lambda param: single expression"
+Use case: one line functions usually passed as a argument to another function.
+Note:__name__ is a special built-in variable which evaluates to the name of the current module.

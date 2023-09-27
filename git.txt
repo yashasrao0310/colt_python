@@ -1,0 +1,9 @@
+U - stands for untracked files(new or changed)
+A - staged
+M - modified - changes made to a file since last commit
+in the gutter(left column)
+1.new lines of code are reflected with green
+2.changes are blue
+3.deleted is red arrowhead
+
+vscode also has ability to perform a diff on files i.e, compare them side-by-side.
