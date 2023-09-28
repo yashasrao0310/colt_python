@@ -1,0 +1,18 @@
+OOP - creating real world objects via classes(to represent them)
+def: Object oreinted programming is a method of programming that attempts to 
+model some process or thing in the world as a class or object.
+
+Class - a blueprint(recipes or specifications) for objects. Classes can contain methods 
+    (functions) and attributes(similar to keys in a dict).
+
+Instance: objects that are constructed from a class blueprint that contain 
+    their class's methods and properties.
+Note: user obj is created based on the user class
+    ex:dict objects are based out od dict classes.
+
+help() - method to receive info aabout classes,funcs or other things in python.
+    nums = [1,2,3] # creating an instance of list class
+
+why OOP?
+With OOP, the goal is to encapsulate your code into logical,hierarchical
+    grouping using classes so that you can reason about your code at a higher level.
