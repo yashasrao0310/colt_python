@@ -1,0 +1,77 @@
+NOTE:PYTHON INTERPRETER READS CODE FROM TOP TO BOTTOM, LEFT TO RIGHT.
+SO BEWARE ORGANISING CODE.(ex:class at top , main() in the bottom).
+
+classes - user-defined datatypes or blueprint to create objects and give the classes custom names.
+Note: classes are only used when you are trying to define some REAL WORLD ENTITY(ex:Student) in your code.
+... -> placeholder ..like pass
+
+Objects/Instances are created from classes(using the blueprint).
+    - each object have their own properties/attributes(instance varaibles) and methods(instance methods/functions) that belong to the class.
+
+properties/attributes also called instance variables.
+
+constructor(__init__) -(instantiates an class object) function that is identical to the class_name, used to initailise the attributes of each object of that class.
+UseCase: Validation(of values passed in by the user i.e, you can check if value passed is of certain dataType or belongs of a list of valid inputs)
+Therefore, classes are better than dictionaries(or other builtin dataTypes)
+
+method is just a function inside a class
+
+self - refers and gives access to CURRENT object that was just created.
+
+__new__ or new - technically used to create an empty object
+__init__ - initialises the contents of an object
+Note:But in python does the new part for you, no need to worry, focus on defining __init__ 
+
+special methods:(dunders) -called automatically - can be overriden
+__str__ - for user(more user friendly)
+__repr__ - for developers with more info
+
+properties - is basically an attribute with more defence mechanisms put in place(we have more control over it).
+@property - function in python(decorator)
+
+decorators - functions that modify the behaviour of other functions.
+
+We can put any error currection we want in these functions(ex:valid input or data type)
+Note:so that other developers can't override the property value written in __init__ after initialisation, later in code.
+getter - function in a class that gets a value
+syntax: @property above function
+
+setter - function in a class that sets a value
+syntax: @property_name.setter above function(ex:@house.setter)
+Note:getter and setter will be called at every instance of trying to access the
+     property(even during self.house = house in __init__ method)
+
+NOTE:Python is not strict But rather beleves in following conventions.(HONOUR SYSTEM)
+    - never override instance varaibles with _varaible_name
+_do_not_touch
+__pls_never_touch
+
+python convention:
+user_defined class start with uppercase
+builtin datatypes start with lowercase(as they come with the language)
+
+class methods - associated with the class itself
+@classmethod - decorator - no access to object(self) but the class(it belongs to).
+
+There is no need that every class have objects.
+Sometimes it can only contain variables and methods that are RELATED to each other(class methods and attributes).
+A class attribute/variable is shared by all objects of the class(only one copy that exists).
+
+Note: no need to instantiate a class with class methods and attributes, we can use functionality that comes with class just like that(as single copy no repeat)
+ClassName.methods() and ClassName.variable (cls.variable inside class and instance methods)
+
+OOP paradigm to follow:
+Bundled-up/Encapsulated - everything/all class related functionality should be encapsulted within the class(or else no use of creating them)
+ex:get_student()
+
+classmethod can be called without instantiating the a class object first.
+
+#conditional used to avoid accidentally running main when weare making a module /package
+if __name__ == "__main__":
+    main()
+NOTE:By using if __name__ == "__main__":, you can specify code that should only be executed
+     when the script is run directly, not when it's imported as a module.
+
+Exceptions are hierarchial(inherit from parents exceptions).SS vavilable see.
+
+Operator overloading is about special methods(dunders, refer colt better)
