@@ -1,0 +1,25 @@
+TDD - test driven developemnt
+
+testing - writing tests/code that tests your other written code.
+    can write tests are different times in developemnt(ex: when deploying new feature, when done with application, etc)
+
+why test?
+    - reduce bugs in existing code.
+    - ensure bugs that are fixed stay fixed.
+most important - ENSURE NEW FEATURES DON'T BREAK OLD/EXISTING ONES.
+(when your working a large production application with many developers)
+    - ensure that cleaning up code doesn't introduce new bugs.
+    - makes development more fun!(when your tests pass)
+
+TDD - test driven development:(philosophy)
+    - development begins by writing tests.
+    - once tests are written , write code to make tests pass.
+    - Once tests pass, a feature is considered complete.
+
+red, green, refactor:(workflow) - it refers to the colors of your tests(passing/failing)
+    1.red - write test that fails
+    2.green - write the minimum amount of code necessary to make the tests pass.
+    3.Refactor - clean up the code, while ensuring that tests still pass
+
+
+

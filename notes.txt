@@ -51,3 +51,5 @@ All are valid.
 17. lambdas - similar to anonymous funcs in JS - syntax: "lambda param: single expression"
 Use case: one line functions usually passed as a argument to another function.
 Note:__name__ is a special built-in variable which evaluates to the name of the current module.
+
+18. args is not mutable, it is a tuple.
