@@ -22,4 +22,19 @@ red, green, refactor:(workflow) - it refers to the colors of your tests(passing/
     3.Refactor - clean up the code, while ensuring that tests still pass
 
 
+Note:If a python file is run with -O(stands for optimization) flag, assertons will not be
+     evaluated!
+
+UNITTEST:
+    # UNIT TEST:(testing framework)
+    # test small parts of an application in isolation(eg: units)
+    # good candidates for unit testing: individual classes, modules or functions. 
+    # bad candidates for unit testing: an entire application, dependencies across several classes or modules
+
+working mechanism:
+    # pytohn comes with a builtin module called unittest
+    # you can write unit tests encapsulated as classes that inherit from unittest.TestCase
+    # This inheritamce gives you access to many assertion helpers that let you test the behaviour of the functions
+    # you can run your tests by calling unittest.main()
+Note: test passes if assertion is True and fails if it is False.
 
