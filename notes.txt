@@ -53,3 +53,6 @@ Use case: one line functions usually passed as a argument to another function.
 Note:__name__ is a special built-in variable which evaluates to the name of the current module.
 
 18. args is not mutable, it is a tuple.
+
+19. HTML - data format to send info back and forth(btw local computer and browser and servers)
+  - and encode information about it(structure and how to render data - big, small, image, etc).
